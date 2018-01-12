@@ -1,0 +1,18 @@
+body {
+    color: brown;
+    
+     background-color: BurlyWood;
+
+}
+
+.container {
+    background-color: gold;
+	//margin: 20px 40px 20px 40px;
+//margin: 0px 40px;
+
+//margin: 40px;
+height: 10px;
+  width: 100px;
+	    //padding: 2cm 4cm 3cm 4cm;
+
+}
