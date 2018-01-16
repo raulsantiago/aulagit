@@ -1,0 +1,101 @@
+*,h1,h2,h3,h4,h5,h6,p,ul,img,div,li {
+	margin:0;
+	padding: 0;
+	}
+
+body{
+  background: #1a1919;
+}
+
+.intro{
+  max-width: 1050px;
+  margin: 80px auto;
+}
+
+.intro::after, .intro::before{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.intro-texto{
+  width: 440px;
+  height: 440px;
+  padding: 30px;
+  float:left;
+  background-color: #fff;
+  margin: auto 10px;
+}
+.intro-texto::after, .intro-texto::before{
+	content:"";
+	display: block;
+	clear: both;
+}
+
+.intro-texto h1{
+  text-transform: uppercase;
+  font-size: 2.25em;
+  text-align: center;
+  line-height: 1.4em;
+  margin: 0px auto;
+  margin-top: 60px;
+}
+
+.intro-texto h1::after{
+  content:"";
+  display:block;
+  width: 380px;
+  height: 1px;
+  background: #252525; /* currentColor é uma variável do css que utiliza a cor atual de cada uma das class que utiliza o pseudo-elemento */
+  margin: 20px auto;
+}
+
+.intro-texto p{
+  margin: 0 auto;
+  text-align: justify;
+  width: 380px;
+	font-size: 1.125em;
+	line-height: 1.4em;
+}
+
+.intro-btnQ a{
+  margin: 20px 10px;
+  text-align: center;
+  width: 155px;
+  float: left;
+  text-decoration: none;
+  padding: 20px;
+  color: #252525;
+  border:1px solid #252525;
+  font-size: 1.125em;
+  font-family: helvetica;
+  text-transform: uppercase;
+  transition: 0.5s background-color;
+}
+.intro-btnQ a:hover{
+  border:1px solid #efb31b;
+  color: #fff;
+	transition: 0.5s;
+	box-shadow: 205px 0 0 0  #efb31b inset;
+}
+
+.intro-btnC a{
+  margin: 20px 10px;
+  text-align: center;
+  width: 155px;
+  float: left;
+  text-decoration: none;
+  padding: 20px;
+  color: #252525;
+  border:1px solid #252525;
+  font-size: 1.125em;
+  font-family: helvetica;
+  text-transform: uppercase;
+  transition: 0.5s background-color;
+}
+.intro-btnC a:hover{
+  border:1px solid #c21611;
+  color: #fff;
+	transition: 0.5s;
+	box-shadow: 205px 0 0 0  #c21611 inset;
+}
