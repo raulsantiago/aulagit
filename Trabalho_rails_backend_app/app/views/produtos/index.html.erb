@@ -1,0 +1,18 @@
+<p><%= image_tag("cafe-1.jpg", alt: "Brafé")%></p>
+<br>
+<h1><%= link_to "Cadastre um produto !", new_produto_path %></h1><br>
+
+<p><%= notice %></p>
+<p><%= alert %></p>
+<br>
+
+<% @produto.each do |st| %>
+  <p>Nome: <%= st.nomeprod %></p>
+  <p>Descrição: <%= st.descricao %></p>
+  <p>Valor: <%= st.valor %></p>
+
+  <%= link_to "(Excluir produto)", destroy_produto_path(id: st.id), method: :delete,
+  data: { confirm: "Tem certeza que deseja excluir?" } %>
+
+  <br>
+<% end %>

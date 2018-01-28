@@ -1,0 +1,38 @@
+<h1>Novo Produto</h1>
+<br>
+
+<p><%= notice %></p>
+<p><%= alert %></p>
+<br>
+
+
+<%= form_for @produto, url: :produtos, method: :post do |form| %>
+
+  <% if @produto.errors.any? && @produto.errors[:nomeprod] %>
+    <%= form.label "Nome #{@produto.errors[:nomeprod].first}" %>
+  <% else %>
+    <%= form.label "Nome" %>
+  <% end %>
+  <%= form.text_field :nomeprod %>
+  <br>
+
+  <% if @produto.errors.any? && @produto.errors[:descricao] %>
+    <%= form.label "Descrição #{@produto.errors[:descricao].first}" %>
+  <% else %>
+    <%= form.label "Descrição" %>
+  <% end %>
+  <%= form.text_field :descricao %>
+  <br>
+
+  <% if @produto.errors.any? && @produto.errors[:valor] %>
+    <%= form.label "Valor #{@produto.errors[:valor].first}" %>
+  <% else %>
+    <%= form.label "Valor" %>
+  <% end %>
+  <%= form.number_field :valor %>
+  <br>
+
+
+
+  <%= form.submit "Cadastrar Produto" %>
+  <% end %>

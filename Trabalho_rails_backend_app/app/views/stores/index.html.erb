@@ -1,0 +1,19 @@
+<p><%= image_tag("cafe-1.jpg", alt: "Brafé")%></p>
+<br>
+<h1><%= link_to "Cadastre uma loja nova !", new_store_path %></h1><br>
+
+<p><%= notice %></p>
+<p><%= alert %></p>
+<br>
+
+<% @stores.each do |st| %>
+  <p>Endereço: <%= st.address %></p>
+  <p>Telefone: <%= st.telefhone %></p>
+  <p>CNPJ: <%= st.cnpj %></p>
+  <p>Razão Social: <%= st.razao_social %></p>
+
+  <%= link_to "(Excluir loja)", destroy_store_path(id: st.id), method: :delete,
+  data: { confirm: "Tem certeza que deseja excluir?" } %>
+
+  <br>
+<% end %>

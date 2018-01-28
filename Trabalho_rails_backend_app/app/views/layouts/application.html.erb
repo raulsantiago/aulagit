@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TrabalhoRailsBackendApp</title>
+    <%= csrf_meta_tags %>
+    <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index,follow">
+    <meta name="keywords" content="brasil café, brasilcafe, café, brafé, fazenda, tradicional, tradição, saboroso, cafeteria, blends, cafeteria">
+    <meta name="description" content="Visite o site e descobra os mais deliciosos e tradicionais cafés vindos diretamente da Fazenda">
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%= render "layouts/header" %>
+    <%= yield %>
+    <%= render "layouts/footer" %>
+  </body>
+</html>
